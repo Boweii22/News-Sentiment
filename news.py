@@ -158,11 +158,11 @@ st.markdown(
 # App title and description
 st.title("📰 Real-Time News Sentiment Tracker")
 st.write(
-    "Enter a keyword below to fetch live news and visualize sentiment trends with a polished, data-driven dashboard."
+    "Enter a search query below to fetch live news and visualize sentiment trends with a polished, data-driven dashboard."
 )
 
 # User input
-query = st.text_input("Enter keyword", value="bitcoin", placeholder="e.g. bitcoin, AI, stock market")
+query = st.text_input("Enter query", value="bitcoin", placeholder="e.g. bitcoin, AI, stock market")
 
 if query:
     with st.spinner("Fetching news and analyzing sentiment..."):
