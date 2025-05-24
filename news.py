@@ -11,8 +11,8 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # Proxy setup
 proxy_host = "brd.superproxy.io"
 proxy_port = "33335"
-proxy_user = "brd-customer-hl_5c430880-zone-mcp_news_scraper"
-proxy_pass = "885fuzigki04"
+proxy_user = "your_proxy_username"
+proxy_pass = "your_proxy_password"
 
 proxies = {
     "http": f"http://{proxy_user}:{proxy_pass}@{proxy_host}:{proxy_port}",
@@ -23,7 +23,7 @@ headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
 }
 
-NEWS_API_KEY = "79d21bcb52f146048f360f57e1b5354f"
+NEWS_API_KEY = ""
 
 
 def fetch_news(query):
