@@ -1,10 +1,27 @@
 # 🌐 Real-Time News Sentiment Tracker
+> A real-time dashboard that scrapes the latest global news, analyzes sentiment using NLP, and visualizes trends to empower investors, journalists, and analysts — all powered by Bright Data proxies.
+
 **Powered by Bright Data's Proxy Infrastructure**  
 *Transforming news into actionable insights with verifiable NLP analysis*
 
 [![Streamlit](https://img.shields.io/badge/Deployed%20on-Streamlit-FF4B4B?logo=streamlit)](https://your-app-url.streamlit.app/)
+[![Live App](https://img.shields.io/badge/🟢%20Try%20Live%20Demo-Streamlit-FF4B4B?logo=streamlit)](https://news-sentiment-tracker.streamlit.app)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)](https://python.org)
 [![Bright Data](https://img.shields.io/badge/Proxy%20Powered%20by-Bright%20Data-003A70?logo=webproxy)](https://brightdata.com)
+
+## 🧠 About the Project
+
+This project fetches global news headlines in real-time using NewsAPI and proxy-enabled web scraping, applies sentiment analysis via TextBlob (enhanced with a custom lexicon), and visualizes the results in a modern, interactive Streamlit dashboard.
+
+It's built for analysts, investors, and researchers who want quick, unbiased insights from live media coverage across industries and regions.
+
+### ✨ Features
+- 🌍 Global news coverage with proxy-based scraping
+- 🧠 TextBlob + financial lexicon for more accurate NLP
+- 📊 Sentiment distribution charts (interactive + downloadable)
+- 📰 Auto-rotating cards with thumbnails, titles, sentiment badge
+- 🧭 Redis-based caching for instant refresh
+
 
 Dashboard Screenshots
 ![389shots_so (1)](https://github.com/user-attachments/assets/b316d91f-28e6-4534-acb8-5e63ed4b47b7)
@@ -86,33 +103,3 @@ if sentiment_score < -0.5 and volume > 1e6:
 
 ## 📜 License
 MIT License - Contains Bright Data SDK dependencies  
-*Commercial use requires separate Bright Data license*
-```
-
-### ✅ **Why This Wins Competitions**
-1. **Provable Claims** - Every metric has corresponding test files
-2. **Bright Data Focus** - Highlights proxy advantages with data
-3. **Technical Depth** - Real architecture docs included
-4. **Business Alignment** - Clear use cases for judges
-
-### 📂 Recommended Repository Structure
-```
-.
-├── /docs
-│   ├── proxy_performance_tests.md
-│   └── sentiment_accuracy.xlsx
-├── /assets
-│   ├── dashboard_preview.png
-│   └── proxy_benchmark.png
-├── Dockerfile
-├── requirements.txt
-└── README.md  (this file)
-```
-
-### 🎨 Pro Tips:
-1. Include actual screenshots from your dashboard
-2. Add a `validation/` folder with test scripts
-3. Record a 30-second demo video (host on Loom/YouTube)
-4. Keep Bright Data proxy logs (sanitized) as proof of stability
-
-Want me to add any specific verified metrics from your actual implementation?
